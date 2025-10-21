@@ -1,0 +1,18 @@
+<main class="dashboard">
+    <section id="dashboard">
+        <h2>Minerals and Gems</h2>
+        {% if items|length > 0 %}
+        <ul class="card-wrapper" style="display: flex; padding: 0; margin: 0; list-style: none;">
+            {% for item in items %}
+            <li style="margin: 0; padding: 0; display: inline-flex;">
+                {% include 'partials/catalog_item.html' %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <div id="no-post">
+            <h2>There are no gems and minerals!</h2>
+        </div>
+        {% endif %}
+    </section>
+</main>

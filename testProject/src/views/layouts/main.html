@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home_controller.home') }}">Home</a></li>
+                <li><a href="/catalog">Catalog</a></li>
+                {% if is_authenticated %}
+                <li><a href="{{ url_for('item_controller.create_get') }}">Create</a></li>
+                <li><a href="{{ url_for('auth_controller.logout') }}">Logout</a></li>
+                {% else %}
+                <li><a href="{{ url_for('auth_controller.login_get') }}">Login</a></li>
+                <li><a href="{{ url_for('auth_controller.register_get') }}">Register</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% if error %}
+        <div class="errorContainer">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+        {% block body %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; JS Back-End 2024</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{% extends 'layouts/main.html' %}
+
+{% block body %}
+<main class="create">
+    <!-- Create Page (Only for logged-in users) -->
+    <section id="create">
+        <div class="form">
+            <h2>Add Stone</h2>
+            <form class="create-form" method="POST">
+                <input type="text" name="name" value="{{ item.name or '' }}" id="name" placeholder="Name" />
+                <input type="text" name="category" value="{{ item.category or '' }}" id="category" placeholder="Category" />
+                <input type="text" name="color" value="{{ item.color or '' }}" id="color" placeholder="Color" />
+                <input type="text" name="image" value="{{ item.image or '' }}" id="stone-img" placeholder="Image" />
+                <input type="text" name="location" value="{{ item.location or '' }}" id="location" placeholder="Location" />
+                <input type="text" name="formula" value="{{ item.formula or '' }}" id="formula" placeholder="Formula" />
+                <input id="description" placeholder="Description..." name="description" value="{{ item.description or '' }}" />
+
+                <button type="submit">Create</button>
+            </form>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
