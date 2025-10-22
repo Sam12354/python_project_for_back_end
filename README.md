@@ -73,6 +73,8 @@ http://localhost:3000
 - Add more validations and error handling
 - Add styling
 
+---
+
 🙏 Final Notes
 
 I apologize if you encounter any issues while using this project. 
