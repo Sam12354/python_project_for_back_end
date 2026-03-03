@@ -73,11 +73,4 @@ http://localhost:3000
 - Add more validations and error handling
 - Add styling
 
----
 
-🙏 Final Notes
-
-I apologize if you encounter any issues while using this project. 
-I'm still learning Python and many related concepts. 
-This project is a work in progress, converted from my original MongoDB, Node.js, and Express.js app with help from a friend and ChatGPT. 
-Thank you for your understanding and support!
