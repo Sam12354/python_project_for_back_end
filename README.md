@@ -2,9 +2,7 @@
 
 This is a web app built using **Flask**, **MySQL**, and **Jinja2**, where users can register, log in, create, edit and delete gems or minerals.
 
-Originally, this was a Node.js + Express + MongoDB project. I’m converting it to Python as part of my learning journey.
-I’ve been learning Python not for long, and I’ve had help from a friend and ChatGPT along the way.
-This project works in PyCharm but not yet in VS Code — still working on that!
+Originally built with Node.js, Express, and MongoDB, this project is being reimplemented using Flask and MySQL.
 
 ---
 
