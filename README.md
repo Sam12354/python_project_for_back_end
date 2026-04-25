@@ -66,9 +66,10 @@ http://localhost:3000
 
 ---
 
-📦 To-Do / Known Issues
-- VS Code doesn't run the project properly yet
-- Add more validations and error handling
-- Add styling
+📦 To-Do / Improvements
+
+    Improve validation and error handling
+    Enhance UI styling
+    Add additional features (e.g. search, filtering)
 
 
